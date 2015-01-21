@@ -23,6 +23,7 @@
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[BLCWebBrowserViewController alloc] init]];
     
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
