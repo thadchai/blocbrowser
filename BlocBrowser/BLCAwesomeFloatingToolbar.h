@@ -17,6 +17,11 @@
 @optional
 
 - (void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title;
+- (void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPanWithOffset:(CGPoint)offset;
+
+// Assignment Work Items
+- (void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPinchWithOffset:(CGPoint)offset;
+- (void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryLongPressWithOffset:(CGPoint)offset;
 
 @end
 
