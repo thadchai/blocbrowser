@@ -89,7 +89,7 @@
             // 0 or 1, so on top
             labelY = 0;
         } else {
-            // 1 or 3, so on the right
+            // 2 or 3, so on the right
             labelY = CGRectGetHeight(self.bounds) / 2;
         }
     

@@ -51,6 +51,14 @@
     }
     
     self.view = mainView;
+    
+    // Assignment Work
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Welcome!", @"Welcome title")
+                                                    message:NSLocalizedString(@"Get excited to use the best web browser ever!", @"Welcome comment")
+                                                   delegate:nil
+                                          cancelButtonTitle:NSLocalizedString(@"OK, I'm excited!", @"Welcome button title")
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)viewDidLoad {
@@ -77,15 +85,6 @@
     self.webview.frame = CGRectMake(0, CGRectGetMaxY(self.textField.frame), width, browserHeight);
     
     self.awesomeToolbar.frame = CGRectMake(20, 100, 280, 60);
-    
-    // Assignment Work
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Welcome!", @"Welcome title")
-                                                    message:NSLocalizedString(@"Get excited to use the best web browser ever!", @"Welcome comment")
-                                                   delegate:nil
-                                          cancelButtonTitle:NSLocalizedString(@"OK, I'm excited!", @"Welcome button title")
-                                          otherButtonTitles:nil];
-    [alert show];
-    
 }
 
 #pragma mark - UITextFieldDelegate
